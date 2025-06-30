@@ -495,5 +495,12 @@ footer .copyright {
         flex: 1;
         max-width: 100%;
     }
+    .contact .container {
+        width: auto;
+        align-items: center;
+    }
+    .contact .container input,.contact .container textarea {
+        width: 300px;
+    }
 
 }
