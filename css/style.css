@@ -443,6 +443,9 @@ footer .copyright {
     }
 }
 @media (max-width:745px){
+    nav {
+        padding: 0;
+    }
     nav .bars {
         position: relative;
         display: flex;
