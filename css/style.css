@@ -286,8 +286,8 @@ section.work .container .item img:hover + .cover, section.work .container .item 
 section.work .container .item .cover {
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
-    width: 350px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     left: 0;
     top: 0;
     display: none;
@@ -314,7 +314,7 @@ section.work .container .item .cover a {
         opacity: 0;
     }
     to {
-        width: 350px;
+        width: 100%;
         opacity: 1;
     }
 }
@@ -415,6 +415,9 @@ footer .copyright {
     section.work .container .item img {
         width: 500px;
         margin-bottom: 40px;
+    }
+    section.work .container .item .cover{
+        width: 100%;
     }
 }
 @media (max-width:967px){
