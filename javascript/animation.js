@@ -15,6 +15,8 @@ const contact = document.querySelector("nav ul li.contact")
 const bars = document.querySelector("nav .bars i")
 const nav = document.querySelector("nav .bars ul")
 
+const contactBtn = document.getElementById("contact-me")
+
 // function to animate
 function animate(animation,elements){
     const observer = new IntersectionObserver((entries) => {
@@ -40,7 +42,7 @@ animate("show-contacts", contacts)
 
 function scroll(btn,destination){
     btn.addEventListener("click",()=>{
-        destination[0].scrollIntoView({behavior: "smooth"})
+        destination[0].scrollIntoView({behavior: "smooth"});
     })
 }
 
@@ -49,6 +51,7 @@ scroll(about,aboutLeft);
 scroll(skills, skillsLeft);
 scroll(works,work)
 scroll(contact,contacts)
+scroll(contactBtn,contacts)
 
 bars.addEventListener("click",()=>{
     nav.classList.toggle("show");
