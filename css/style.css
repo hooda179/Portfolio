@@ -7,8 +7,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {
+html, body {
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 section {
     padding: 0 var(--padding-left);
@@ -516,14 +518,26 @@ footer .copyright {
     :root {
         --padding-left: 20px;
     }
+    h2 {
+        font-size: 2rem;
+    }
+    header .right img {
+        width: 200px;
+    }
     header .left h1 {
         font-size: 1.5rem;
+    }
+    section.about .container .left img {
+        width: 200px;
     }
     section.work .container .item  {
         flex: 1;
     }
     section.work .container .item img {
         width: 100%;
+    }
+    .contact .container input,.contact .container textarea {
+        width: 200px;
     }
 
     
