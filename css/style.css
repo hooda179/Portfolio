@@ -528,6 +528,7 @@ footer .copyright {
     }
     header .right img {
         width: 200px;
+        margin-top: 50px;
     }
     header .left h1 {
         font-size: 1.5rem;
